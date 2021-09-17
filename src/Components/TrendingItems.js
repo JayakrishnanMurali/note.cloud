@@ -10,10 +10,10 @@ function TrendingItems() {
         return (
           <div
             key={trend.id}
-            className="flex items-center space-x-8 justify-between bg-gray-800 px-3 py-4 rounded-xl mb-4"
+            className="flex items-center space-x-8 justify-between cursor-pointer bg-gray-800 px-3 py-4 rounded-xl mb-4 transition-colors hover:bg-gray-700"
           >
             <div>
-              <h3 className="text-yellow-600 text-4xl">
+              <h3 className="text-yellow-600 text-4xl transition-all cursor-default transform hover:scale-110">
                 <AiFillPlayCircle />
               </h3>
             </div>
@@ -28,7 +28,7 @@ function TrendingItems() {
             <div className="flex items-center">
               <h6 className="text-gray-500 text-base mr-2">4:00</h6>
               <div>
-                <h3 className="text-white">
+                <h3 className="text-white cursor-default">
                   <HiOutlineDotsVertical />
                 </h3>
               </div>

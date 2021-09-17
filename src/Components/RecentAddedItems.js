@@ -14,7 +14,7 @@ const RecentAddedItems = ({ image, title, author }) => {
             <img
               src={eachPost.image}
               alt=""
-              className="h-52 object-cover min-w-min p-2 bg-gray-800 rounded-xl"
+              className="h-52 object-cover min-w-min p-2 bg-gray-800 rounded-xl transition-colors hover:bg-gray-700"
             />
             <div className="ml-3">
               <h3 className="text-white mt-5 font-semibold text-lg">
