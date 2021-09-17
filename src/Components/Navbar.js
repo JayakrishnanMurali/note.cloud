@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <nav
       className="grid   grid-cols-2  
-    sm:flex   sm:items-center
+    sm:flex   sm:items-center 
     "
     >
       <div className="flex order-1 cursor-pointer mb-12 sm:mb-0">
@@ -28,7 +28,7 @@ function Navbar() {
         />
       </div>
 
-      <div className="justify-self-end order-2 cursor-pointer text-white">
+      <div className="justify-self-end order-2 cursor-pointer text-white fixed z-20">
         <UisBars className="w-7 h-7" />
       </div>
     </nav>

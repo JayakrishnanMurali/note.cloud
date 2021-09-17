@@ -7,7 +7,6 @@ const RecentlyAdded = () => {
       <h1 className="text-white text-2xl font-semibold mt-12">
         Recently Added
       </h1>
-
       <RecentAddedItems />
     </div>
   );
