@@ -6,3 +6,14 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+
+@layer base {
+  :root {
+    --white-color: #ffffff;
+    --gray-color: #adb5bd;
+    --dark-color: #293241;
+    --accent-color: #ee6c4d;
+    --black-color: #000000;
+    --dark-gray-color: #6c757d;
+  }
+}

@@ -5,7 +5,7 @@ import trending from "../data/Trending";
 
 function TrendingItems() {
   return (
-    <div className="py-6">
+    <div className="py-6 ">
       {trending.map((trend) => {
         return (
           <div
