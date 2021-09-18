@@ -5,6 +5,8 @@ import { UilMusic } from "@iconscout/react-unicons";
 import { UilFolder } from "@iconscout/react-unicons";
 import { UilUsersAlt } from "@iconscout/react-unicons";
 import { UilHeart } from "@iconscout/react-unicons";
+import { NavLink } from "react-router-dom";
+import Playlists from "../Components/Playlists";
 
 const homeBtn = <UilEstate />;
 const musicBtn = <UilMusic />;
@@ -14,12 +16,27 @@ const likeBtn = <UilHeart />;
 
 function Sidebar() {
   return (
-    <div>
-      <SideButtons icon={homeBtn} text={"Home"} />
-      <SideButtons icon={musicBtn} text={"Songs"} />
-      <SideButtons icon={folderBtn} text={"Albums"} />
-      <SideButtons icon={artistBtn} text={"Artists"} />
-      <SideButtons icon={likeBtn} text={"Liked"} />
+    <div className="lg:mt-12 lg:block  md:hidden">
+      <h1 className="text-gray-600 pl-4 mb-3 tracking-widest cursor-default font-semibold text-lg">
+        MUSIC
+      </h1>
+      <NavLink to="/">
+        <SideButtons icon={homeBtn} text={"Home"} />
+      </NavLink>
+      <NavLink to="/songs">
+        <SideButtons icon={musicBtn} text={"Songs"} />
+      </NavLink>
+      <NavLink to="/albums">
+        <SideButtons icon={folderBtn} text={"Albums"} />
+      </NavLink>
+      <NavLink to="/artists">
+        <SideButtons icon={artistBtn} text={"Artists"} />
+      </NavLink>
+      <NavLink to="/liked">
+        <SideButtons icon={likeBtn} text={"Liked"} />
+      </NavLink>
+
+      <Playlists />
     </div>
   );
 }
