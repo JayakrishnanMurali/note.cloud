@@ -16,7 +16,7 @@ const likeBtn = <UilHeart />;
 
 function Sidebar() {
   return (
-    <div className="lg:mt-12 lg:block  md:hidden">
+    <div className="lg:mt-12 lg:block  md:hidden bg-gray-900 z-40">
       <h1 className="text-gray-600 pl-4 mb-3 tracking-widest cursor-default font-semibold text-lg">
         MUSIC
       </h1>

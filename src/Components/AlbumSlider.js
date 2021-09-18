@@ -7,8 +7,10 @@ function AlbumSlider({ title, descrption, image }) {
       <div className="bg-gray-800 bg-opacity-70">
         <div className="flex items-center justify-between p-7">
           <div className="cursor-pointer">
-            <h1 className="text-white font-bold text-4xl">{title}</h1>
-            <h3 className="text-gray-400 text-base font-medium mt-3">
+            <h1 className="text-white text-2xl font-extrabold sm:font-bold sm:text-4xl">
+              {title}
+            </h1>
+            <h3 className="text-gray-400 text-sm font-bold sm:text-base sm:font-medium mt-3">
               {descrption}
             </h3>
           </div>
@@ -16,7 +18,7 @@ function AlbumSlider({ title, descrption, image }) {
             <img
               src={image}
               alt=""
-              className="object-cover h-72 cursor-pointer md:h-60"
+              className="object-cover h-40 lg:h-72 cursor-pointer md:h-60"
             />
           </div>
         </div>
